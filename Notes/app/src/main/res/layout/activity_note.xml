@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NoteActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <include layout="@layout/note_toolbar_layout"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.nabin.notes.LinedEditText
+        android:id="@+id/edit_note"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:lineHeight="25dp"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:gravity="top"
+        android:imeOptions="flagNoExtractUi"
+        />
+
+</LinearLayout>
